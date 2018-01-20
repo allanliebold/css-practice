@@ -7,7 +7,6 @@ h1 {
   font-weight: bold;
   color: #0072ae;
   background-color: black;
-  width: 300px;
   padding: 50px;
   margin: 50px;
   border: 10px solid blue;
@@ -16,7 +15,6 @@ h1 {
 .alt-headline {
   font-size: 40px;
 }
-
 h2 {
   font-size: 26px;
   font-style: italic;
