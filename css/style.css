@@ -28,6 +28,12 @@ h2 {
   margin-bottom: 10px;
 }
 
+.column-title {
+  font-style: normal;
+  color: #0072ae;
+  font-weight: bold;
+}
+
 p {
   font: normal normal 18px/1.6 Georgia, 'Times New Roman', serif;
 }
