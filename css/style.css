@@ -1,6 +1,11 @@
+/**********
+Basic Styles
+**********/
+
 section {
   margin: 50px;
 }
+
 h1 {
   font-size: 70px;
   line-height: 1.4;
@@ -15,6 +20,7 @@ h1 {
 .alt-headline {
   font-size: 40px;
 }
+
 h2 {
   font-size: 26px;
   font-style: italic;
