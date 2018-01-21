@@ -84,6 +84,10 @@ Article Styles
   background-color: #58C9EB;
 }
 
+/**********
+Columns
+**********/
+
 .secondary-section {
   margin-bottom: 50px;
   background-color: #7EEEAF;
@@ -97,4 +101,12 @@ Article Styles
 
 .column:first-child {
   margin-left: 0;
+}
+
+/**********
+Buttons
+**********/
+.button {
+  border: 2px solid #333;
+  color: #333;
 }
