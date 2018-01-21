@@ -48,6 +48,45 @@ p {
 }
 
 /**********
+Modular Styles
+**********/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/**********
 Article Styles
 **********/
 .intro-content {
@@ -119,4 +158,9 @@ Buttons
 
 .button-narrow {
   width: 25%;
+}
+
+.button-alt {
+  color: #fff;
+  border-color: #fff;
 }
