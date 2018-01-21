@@ -53,3 +53,11 @@ Article Styles
 .content-block .figure {
   margin: 30px;
 }
+
+.content-block h1 {
+  color: #fff;
+}
+
+.content-block p {
+  font-family: Georgia, 'Times New Roman' sans-serif;
+}
