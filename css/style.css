@@ -2,11 +2,23 @@
 Basic Styles
 **********/
 
+body {
+  background-color: #dcdcdc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+}
+
 .wrapper {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #eb2428;
 }
 
 h1 {
