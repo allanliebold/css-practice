@@ -1,3 +1,11 @@
+.grouping:before,
+.grouping:after {
+  content: " ";
+  display: table;
+} .grouping:after {
+  clear: both;
+}
+
 /**********
 Basic Styles
 **********/
@@ -74,6 +82,11 @@ Article Styles
 
 .style-1 {
   background-color: #58C9EB;
+}
+
+.secondary-section {
+  margin-bottom: 50px;
+  background-color: #7EEEAF;
 }
 
 .column {
