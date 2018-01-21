@@ -156,6 +156,11 @@ Buttons
   letter-spacing: 1.5px;
 }
 
+.button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
 .button-narrow {
   width: 25%;
 }
