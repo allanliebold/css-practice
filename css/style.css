@@ -192,3 +192,40 @@ Buttons
   color: #fff;
   border-color: #fff;
 }
+
+/**********
+Action Button
+**********/
+.intro-content {
+  width: 360px;
+  margin-right: 60px;
+  float: left;
+}
+
+.action-content {
+  width: 300px;
+  float: left;
+  margin-top: 125px;
+}
+
+.call-to-action {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #0072ae;
+  padding: 25px 0;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  -webkit-transition: .25s all ease-in-out;
+  -moz-transition: .25s all ease-in-out;
+  -o-transition: .25s all ease-in-out;
+  transition: .25s all ease-in-out;
+}
+
+.call-to-action:hover {
+  border-color: #0072ae;
+  color: #0072ae;
+  background: none;
+}
