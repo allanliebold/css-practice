@@ -116,3 +116,7 @@ Buttons
   font-weight: bold;
   letter-spacing: 1.5px;
 }
+
+.button-narrow {
+  width: 25%;
+}
