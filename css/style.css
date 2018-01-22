@@ -72,7 +72,18 @@ nav figure {
   position: absolute;
   top: 10px;
   left: 40px;
+  -webkit-animation-name: logoDown;
+  -webkit-animation-duration: .75s;
+  -webkit-animation-timing-function: ease;
 }
+@-webkit-keyframes logoDown {
+  0% {-webkit-transform: translate(0%, -100%); opacity: 0;}
+  11% {-webkit-transform: translate(10%, -90%);}
+  33% {-webkit-transform: translate(-100%, 0%); opacity: 1;}
+  66% {-webkit-transform: translate(10%); opacity: 0;}
+  100% {-webkit-transform: translate(0%); opacity: 1;}
+}
+
 nav img {
   width: 100px;
 }
