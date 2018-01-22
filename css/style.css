@@ -50,6 +50,24 @@ p {
 /**********
 Nav Styles
 **********/
+nav {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+nav figure {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+
+nav img {
+  width: 100px;
+}
+
 .primary-nav {
   float: right;
 }
@@ -63,6 +81,10 @@ Nav Styles
   padding: 25px 0;
   width: 150px;
   border-left: 1px solid #ada791;
+}
+
+.primary-nav > li:first-child > a {
+  border-left: none;
 }
 
 nav li a {
@@ -182,7 +204,7 @@ Columns
 
 .secondary-section {
   margin-bottom: 50px;
-  background-color: #7EEEAF;
+  background-color: none;
 }
 
 .column {
@@ -236,13 +258,14 @@ Action Button
 .intro-content {
   width: 360px;
   margin-right: 60px;
+  margin-top: 125px;
   float: left;
 }
 
 .action-content {
   width: 300px;
   float: left;
-  margin-top: 125px;
+  margin-top: 150px;
 }
 
 .call-to-action {
