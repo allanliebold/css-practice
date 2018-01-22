@@ -13,15 +13,22 @@
     <figure>
       <img src="images/samuslogo.png" alt="logo">
     </figure>
-      <ul class="primary-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">Info</a></li>
-        <li><a href="#">Links</a></li>
-      </ul>
+    <ul class="primary-nav">
+      <li><a href="#">Home</a></li>
+      <li class="has-submenu"><a href="#">Articles</a>
+        <ul>
+          <li><a href="#">Article 1</a></li>
+          <li><a href="#">Article 3</a></li>
+          <li><a href="#">Article 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Info</a></li>
+      <li><a href="#">Links</a></li>
+    </ul>
   </nav>
-  <section>
-    <div class="wrapper grouping">
+
+  <section class="grouping">
+    <div class="wrapper">
       <div class="intro-content">
         <h1>Main Section</h1>
         <h2>Sub heading text</h2>
@@ -30,39 +37,39 @@
       </div>
       <div class="action-content">
         <a href="#" class="call-to-action">Action Button</a>
-        <p>Ut enim ad minim veniam...<a href="#">More &raquo;</a></p>
+        <p class="action-subtext">Ut enim ad minim veniam...<a href="#">More &raquo;</a></p>
       </div>
     </div>
   </section>
+  <section class="secondary-section grouping">
+    <div class="wrapper">
+      <div class="column">
+        <figure>
+          <a href="https://placeholder.com"><img src="http://via.placeholder.com/256x256" alt="First Image"></a>
+        </figure>
+        <h2>Div 1</h2>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="button">Button &raquo;</a>
+      </div>
+      <div class="column">
+        <figure>
+          <a href="https://placeholder.com"><img src="http://via.placeholder.com/256x256" alt="Second Image"></a>
+        </figure>
+        <h2>Div 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a href="#" class="button">Button &raquo;</a>
+      </div>
+      <div class="column">
+        <figure>
+          <a href="https://placeholder.com"><img src="http://via.placeholder.com/256x256" alt="Third Image"></a>
+        </figure>
+        <h2>Div 3</h2>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <a href="#" class="button">Button &raquo;</a>
+      </div>
+    </div><!-- end wrapper -->
+  </section>
+
 </body>
-
-<section class="secondary-section grouping">
-  <div class="wrapper">
-    <div class="column">
-      <figure>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/256x256" alt="First Image"></a>
-      </figure>
-      <h2>Div 1</h2>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <a href="#" class="button">Button &raquo;</a>
-    </div>
-    <div class="column">
-      <figure>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/256x256" alt="Second Image"></a>
-      </figure>
-      <h2>Div 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a href="#" class="button">Button &raquo;</a>
-    </div>
-    <div class="column">
-      <figure>
-        <a href="https://placeholder.com"><img src="http://via.placeholder.com/256x256" alt="Third Image"></a>
-      </figure>
-      <h2>Div 3</h2>
-      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-      <a href="#" class="button">Button &raquo;</a>
-    </div>
-  </div><!-- end wrapper -->
-</section>
-
+</html>
 </html>

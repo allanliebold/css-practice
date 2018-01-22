@@ -1,3 +1,9 @@
+:focus {
+  coutline: none;
+}
+strong {
+  font-weight: bold;
+}
 .grouping:before,
 .grouping:after {
   content: " ";
@@ -5,46 +11,50 @@
 } .grouping:after {
   clear: both;
 }
+img, iframe, video, object {
+  max-width: 100%;
+}
 
 /**********
 Basic Styles
 **********/
-
+::-moz-selection {
+  background-color: #eb2428;
+}
+::selection {
+  width: 960px;
+  margin: 0 auto;
+}
 body {
   background-color: #dcdcdc;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-size: 16px;
 }
-
 .wrapper {
   margin: 0 auto;
   width: 960px;
 }
-
 a {
   text-decoration: none;
   color: #eb2428;
 }
-
 h1 {
   font-weight: 700;
   font-size: 80px;
   color: #0072ae;
   margin-bottom: 10px;
 }
-
 h2 {
   font-weight:700;
   font-size: 30px;
   color: #eb2428;
   margin-bottom: 10px;
 }
-
 p {
   line-height: 1.6;
   margin-bottom: 20px;
-  font: normal normal 18px/1.6 Georgia, 'Times New Roman', serif;
+  font-size: 16px;
 }
 
 /**********
@@ -56,14 +66,13 @@ nav {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 1;
 }
-
 nav figure {
   position: absolute;
   top: 10px;
   left: 40px;
 }
-
 nav img {
   width: 100px;
 }
@@ -107,42 +116,63 @@ nav li a.active {
 }
 
 /**********
+Drop Down Menu
+**********/
+.has-submenu ul {
+  position: absolute;
+  top: 65px;
+  background-color: #fff;
+  border-bottom: 1px solid #ada791;
+  border-left: 1px solid #ada791;
+  border-right: 1px solid #ada791;
+  width: 150px;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+  display: none;
+}
+
+.has-submenu:hover ul {
+  display: block;
+}
+
+.has-submenu a {
+  display: block;
+  padding: 20px 0;
+}
+
+/**********
 Modular Styles
 **********/
 .float-left {
   float: left;
 }
-
 .float-right {
   float: right;
 }
-
 .clear {
   clear: both;
 }
-
 .bold {
   font-weight: bold;
 }
-
-.hidden {
+.hidden,
+.hide {
   display: none;
 }
-
 .relative {
   position: relative;
 }
-
 .absolute {
   position: absolute;
 }
-
 .block {
   display: block;
 }
-
 .inline-block {
   display: inline-block;
+}
+.text-centered {
+  text-align: center;
 }
 
 /**********
@@ -235,18 +265,15 @@ Buttons
   transition: .25s all ease-in-out;
   transform: scale(.9, .9);
 }
-
 .button:focus,
 .button:hover {
   background-color: #333;
   color: #fff;
   transform: scale(1.1, 1.1) translate(0, -5px);
 }
-
 .button-narrow {
   width: 25%;
 }
-
 .button-alt {
   color: #fff;
   border-color: #fff;
@@ -256,18 +283,16 @@ Buttons
 Action Button
 **********/
 .intro-content {
-  width: 360px;
+  width: 600px;
   margin-right: 60px;
   margin-top: 125px;
   float: left;
 }
-
 .action-content {
   width: 300px;
   float: left;
   margin-top: 150px;
 }
-
 .call-to-action {
   border: 2px solid #fff;
   color: #fff;
@@ -295,4 +320,11 @@ Action Button
   border-color: #0072ae;
   color: #0072ae;
   background: none;
+}
+
+.action-subtext {
+  color: #333;
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
 }
