@@ -50,11 +50,16 @@ p {
 /**********
 Nav Styles
 **********/
+.primary-nav {
+  float: right;
+}
+
 .primary-nav > li {
   float: left;
 }
 
 .primary-nav > li > a {
+  float: left;
   padding: 25px 0;
   width: 150px;
   border-left: 1px solid #ada791;
@@ -70,6 +75,13 @@ nav li a {
   -moz-transition: 0.15s background-color linear;
   -o-transition: 0.15s background-color linear;
   transition: 0.15s background-color linear;
+}
+
+nav li a:focus,
+nav li a:hover,
+nav li a.active {
+  background-color: #eb2428;
+  color: #fff;
 }
 
 /**********
