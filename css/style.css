@@ -378,4 +378,60 @@ Media Queries
   .column h2 {
     text-align: center;
   }
-}
+} /* end of query */
+@media screen and (max-width: 900px) {
+  nav {
+    position: static;
+  }
+  .primary-nav {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all ease-in-out .35s;
+    -moz-transition: all ease-in-out .35s;
+    -o-transition: all ease-in-out .35s;
+    transition: all ease-in-out .35s
+  }
+  .primary-nav.active {
+    max-height: 350px;
+  }
+  .primary-nav > li {
+    float: right;
+    width: 100%;
+  }
+  .primary-nav li a {
+    width: 100%;
+    text-align: right;
+    padding: 15px 25px 15px 0;
+    border-bottom: 1p solid #e7e7e7;
+    border-left: none;
+    font-size: 13px;
+  }
+  .has-submenu ul {
+    position: static;
+    display: block;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+  }
+  .has-submenu:hover ul {
+    -webkit-animation: none;
+    animation: none;
+  }
+  nav figure {
+    width: 80px;
+    top: 0;
+    left: 20px;
+  }
+  .mobile-menu-icon {
+    background: url('../images/mobile-menu-icon.png') 0 0 no-repeat;
+    width: 30px;
+    height: 26px;
+    float: right;
+    margin: 10px 15px 10px 0;
+    cursor: pointer;
+  }
+  .mobile-menu-icon.open {
+    background-image: url('../images/mobile-menu-close-icon.png');
+  }
+} /* end of query */
