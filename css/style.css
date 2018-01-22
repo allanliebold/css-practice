@@ -140,10 +140,13 @@ Drop Down Menu
   border-radius: 0 0 15px 15px;
   overflow: hidden;
   display: none;
+  z-index: 5;
 }
 .has-submenu a {
+  position: relative;
   display: block;
   padding: 20px 0;
+  z-index: 10;
 }
 .has-submenu:hover ul {
   display: block;
