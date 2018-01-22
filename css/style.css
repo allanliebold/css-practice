@@ -33,7 +33,8 @@ body {
 }
 .wrapper {
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
+  width: 90%;
 }
 a {
   text-decoration: none;
@@ -303,13 +304,13 @@ Buttons
 Action Button
 **********/
 .intro-content {
-  width: 600px;
-  margin-right: 60px;
+  width: 62.5%; /* 600px / 960px = .625 */
+  margin-right: 6.25%; /* 60px / 960px = .0625 */
   margin-top: 125px;
   float: left;
 }
 .action-content {
-  width: 300px;
+  width: 31.25%; /* 300px / 960px = .3125 */
   float: left;
   margin-top: 150px;
 }
