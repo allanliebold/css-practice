@@ -130,15 +130,21 @@ Drop Down Menu
   overflow: hidden;
   display: none;
 }
-
-.has-submenu:hover ul {
-  display: block;
-}
-
 .has-submenu a {
   display: block;
   padding: 20px 0;
 }
+.has-submenu:hover ul {
+  display: block;
+  -webkit-animation-name: slideDown;
+  -webkit-animation-duration: .25s;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes slideDown {
+  from {-webkit-transform: translateY(-100%);opacity: 0;}
+  to {-webkit-transform: translateY(0%);opacity: 1;}
+}
+
 
 /**********
 Modular Styles
