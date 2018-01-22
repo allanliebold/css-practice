@@ -14,6 +14,12 @@ strong {
 img, iframe, video, object {
   max-width: 100%;
 }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 /**********
 Basic Styles
@@ -71,6 +77,7 @@ nav {
 }
 nav figure {
   position: absolute;
+  width: 100px;
   top: 10px;
   left: 40px;
   -webkit-animation-name: logoDown;
@@ -83,10 +90,6 @@ nav figure {
   33% {-webkit-transform: translate(-100%, 0%); opacity: 1;}
   66% {-webkit-transform: translate(10%); opacity: 0;}
   100% {-webkit-transform: translate(0%); opacity: 1;}
-}
-
-nav img {
-  width: 100px;
 }
 
 .primary-nav {
@@ -200,19 +203,18 @@ Modular Styles
 Article Styles
 **********/
 .intro-content {
-  width: 100%;
   padding-bottom: 80px;
+  margin-top: 125px;
 }
-
 .content-block {
   padding: 50px 0;
 }
-
 .content-block .figure {
-  margin: 30px 30px;
+  margin: 30px 3.125%; /* 30px / 960px = .03125*/
   float: left;
-  border: 10px solid #fff;
+  border: 15px solid #fff;
   overflow: hidden;
+  width: 23.95% /* 230px / 960px = .23958 */
 }
 .content-block .figure img {
   float: left;
@@ -228,23 +230,18 @@ Article Styles
   -o-transform: rotate(15deg) scale(1.25, 1.25);
   transform: rotate(15deg) scale(1.25, 1.25);
 }
-
 .content-block h1 {
   color: #fff;
 }
-
 .content-block p {
   font-family: Georgia, 'Times New Roman' sans-serif;
 }
-
 .style-2 {
   background-color: #494949;
 }
-
 .style-2 p {
   color: #fff;
 }
-
 .style-1 {
   background-color: #58C9EB;
 }
@@ -255,7 +252,6 @@ Columns
 
 .secondary-section {
   margin-bottom: 50px;
-  background-color: none;
 }
 
 .column {
@@ -348,4 +344,27 @@ Action Button
   font-size: 12px;
   margin-top: 15px;
   text-align: center;
+}
+
+/**********
+Media Queries
+**********/
+@media screen and (max-width: 1023px) {
+  .intro-content {
+    float: none;
+    width: auto;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .action-content {
+    float: none;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .column {
+    float: none;
+    width: auto;
+  }
 }
