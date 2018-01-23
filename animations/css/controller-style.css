@@ -61,6 +61,15 @@ body {
   transform: rotate(90deg);
 }
 
+#detail {
+  position: absolute;
+  top: 17%;
+  left: 30%;
+  right: 45%;
+  bottom: 18%;
+  background: #9ab;
+}
+
 .btn {
   display: block;
   position: absolute;
