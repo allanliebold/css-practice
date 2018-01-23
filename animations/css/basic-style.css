@@ -1,0 +1,15 @@
+#contain-all {
+  margin: 100px 50px;
+  width: 300px;
+  height: 300px;
+  border: 5px solid red;
+  border-radius: 10%;
+  background: blue;
+  transition: .25s all ease-in-out;
+}
+
+#contain-all:hover {
+  background: green;
+  border-radius: 90%;
+  border: 10px dotted purple;
+}
